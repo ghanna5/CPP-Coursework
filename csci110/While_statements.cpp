@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+#include <iomanip>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+    float count = 0;
+    float total = 0;
+    float avg = 0;
+    int num;
+
+    cout << "Please enter the number of iterations: ";
+    cin >> num;
+
+    for (int i = 0; 1 < num; ++i)
+    {
+        cout << "I = " << i << endl;
+        ++count;
+        total = total + i;
+    }
+    cout << "Total = " << total << endl;
+    avg = total / count;
+    cout << "Average = " << avg << endl;
+
+    system("pause");
+    return 0;
+}
